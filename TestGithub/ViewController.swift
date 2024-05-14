@@ -12,9 +12,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("Hello")
-        print("Clone Complete")
-        print("Hello World")
+        
+        for i in 1...100 {
+            print("Number : \(i)")
+        }
+        
+        
     }
 
 
