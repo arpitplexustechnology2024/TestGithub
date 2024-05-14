@@ -13,13 +13,29 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        for i in 1...100 {
-            print("Number : \(i)")
+        balanceEnergy(energy: 70)
+       
         }
         
+    func balanceEnergy(energy: Int) {
+        if(energy < 60) {
+            drinkCoffee()
+        } else {
+            drinkWater()
+        }
+      }
+
+      func drinkCoffee() {
+        print("Glup, glup, glup. I love coffee")
+      }
+
+      func drinkWater() {
+        print("Glup, glup, glup. Hydration is good!")
+      }
+
         
     }
 
 
-}
+
 
